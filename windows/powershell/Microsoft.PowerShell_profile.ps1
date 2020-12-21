@@ -42,6 +42,7 @@ function bk {
     Copy-Item $HOME\AppData\Local\nvim\init.vim $HOME\dotfiles\windows\nvim
     Copy-Item $PROFILE $HOME\dotfiles\windows\powershell
     Copy-Item $HOME\AppData\Local\Packages\Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe\LocalState\settings.json $HOME\dotfiles\windows\wt_settings.json
+    Copy-Item $HOME\.config\starship.toml $HOME\dotfiles\_rc\starship.toml
     scoop export > $HOME\dotfiles\windows\scoop.list
 }
 function rmrf { rm -Recurse -Force $args[0] }
